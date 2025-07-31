@@ -1,0 +1,660 @@
+:root{
+    --blue-clr: #1523ff;
+    --naive-clr: #1d3673;
+    --red-clr: #ff2a15;
+    --gld-clr: #eac13b;
+    --txt-clr: #ffffff;
+    --txt-clr-: #ffffff;
+    --bg-clr-: #212121;
+    --bg-clr: #212121;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body {
+    background: var(--txt-clr);
+    color: var(--bg-clr);
+    transition: 1s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.nav-line{
+    width: 100%;
+    height: 1.5px;
+    background: var(--gld-clr);
+}
+
+.nav-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    background: var(--naive-clr);
+    color: var(--txt-clr-);
+}
+.nav-info ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 9px 2px;
+    
+}
+.nav-info ul::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: var(--txt-clr-);
+    left: -22px;
+}
+.nav-info ul li i{
+    font-size: 15px;
+    padding-right: 4px;
+}
+
+
+.nav-info .social{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 2px;
+    padding-top: 11px;
+}
+
+.nav-info .social::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: var(--txt-clr-);
+    left: -22px;
+}
+.nav-info .social::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: var(--txt-clr-);
+    right: -12px;
+}
+
+.nav-info .social a{
+    height: 33px;
+	width: 33px;
+    text-align: center;
+	background-color: var(--gld-clr);
+	margin:0 10px 10px 0;
+	line-height: 33px;
+	border-radius: 5px;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.nav-info .social a:hover{
+    border-radius: 50%;
+}
+
+.nav-info .social i{
+    font-size: 17px;
+}
+
+.nav-info ul a{
+    text-decoration: none;
+    color: var(--txt-clr-);
+    padding-left: 3px;
+}
+.nav-info ul i{
+    font-size: 12px;
+}
+
+.logo span{
+    color: var(--blue-clr);
+    padding-left: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--bg-clr);
+}
+
+.logo img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.off-screen-menu{
+    display: none;
+}
+
+.dark-light{
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.navbar li{
+    list-style: none;
+}
+.navbar {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    display: flex;
+    margin: 0px 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding: 5px 5px;
+    transition: 0.4s;
+}
+
+.navbar a:hover{
+    color: var(--txt-clr-);
+}
+
+.navbar a:after{
+    content: "";
+    position: absolute;
+    background: var(--blue-clr);
+    box-shadow: 0px 0px 10px var(--blue-clr);
+    height: 4px;
+    width: -1;
+    left: 0;
+    bottom: -1px;
+    transition: 0.4s;
+    z-index: -1;
+}
+.navbar a:hover:after{
+    width: 100%;
+    padding: 13px 0px;
+}
+
+
+.hero{
+    width: 100%;
+    height: 325px;
+    background-image: url("img/admin.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--txt-clr-);
+}
+
+.hero h1{
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.grade_8{
+    text-align: center;
+    margin: 55px 40px;
+}
+
+.grade_8 h2{
+    font-size: 40px;
+}
+.grade_8 .line{
+    width: 30%;
+    height: 2px;
+    background: var(--blue-clr);
+    margin-left: 35%;
+    margin-bottom: 20px;
+
+}
+
+.info p{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.sa-citizen{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sa-citizen h3{
+    font-size: 30px;
+    margin-top: 35px;
+    font-weight: 550;
+}
+.grade_8 .sa-citizen .line{
+    width: 27.5%;
+    margin-left: 0px;
+    height: 2px;
+}
+.sa-citizen li{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+.non-citizen{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+.non-citizen h3{
+    font-size: 30px;
+    margin-top: 35px;
+    font-weight: 550;
+}
+.non-citizen .line{
+    width: 32.5%;
+    margin-left: 0px;
+    height: 3px;
+    
+}
+.non-citizen li{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+.non-citizen ul{
+    margin-left: 27px;
+}
+.extra p{
+    font-size: 26px;
+}
+
+.other_grades h2{
+    font-size: 40px;
+}
+.other_grades .line{
+    width: 35.5%;
+    height: 2px;
+    background: var(--red-clr);
+    margin-left: 32.5%;
+    margin-bottom: 20px;
+
+}
+
+.other_grades {
+    text-align: center;
+    margin: 55px 40px;
+}
+
+.sa-citizen{
+    text-align: left;
+    margin-left: 20px;
+}
+
+.sa-citizen h3{
+    font-size: 30px;
+    margin-top: 35px;
+    font-weight: 550;
+}
+.other_grades .sa-citizen .line{
+    width: 27.5%;
+    margin-left: 0px;
+    height: 3px;
+}
+.sa-citizen li{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+
+.non-citi{
+    text-align: left;
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+.non-citi h3{
+    font-size: 30px;
+    margin-top: 35px;
+    font-weight: 550;
+}
+.non-citi .line{
+    width: 32.5%;
+    margin-left: 0px;
+    
+    
+}
+.non-citi li{
+    font-size: 25px;
+    padding: 10px 0px;
+}
+.non-citi ul{
+    margin-left: 27px;
+}
+
+.extra_info{
+    font-size: 27px;
+    margin: 35px 40px;
+    text-align: center; 
+    
+}
+
+.extra_info p{
+    padding: 17px 0px;
+}
+
+.green{
+    color: green;
+}
+.red{
+    color: red;
+}
+
+@media(max-width: 1025px){
+    .nav-info{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 980px){
+    .nav-info{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 821px){
+    .navbar{
+       display: none;
+   }
+   
+   .hide{
+       display: flex;
+   }
+
+   .nav-info{
+    display: none;
+   }
+
+     .hero h1{
+         font-size: 55px;
+     }
+   .hero{
+       height: 250px;
+   }
+   
+   .grade_8 .line{
+       width: 55%;
+       margin-left: 23%;
+   }
+   
+   .sa-citizen .line{
+      margin-left: 0;
+      width: 52%;
+   }
+   .non-citizen .line{
+       margin-left: 0;
+       width: 62%;
+   }
+   
+   .other_grades .line{
+         width: 66%;
+         margin-left: 17%;
+   }
+   
+   .grade_8 .sa-citizen .line{
+      margin-left: 0;
+      width: 55%;
+   }
+
+   .other_grades  .sa-citizen .line{
+    margin-left: 0;
+    width: 55%;
+ }
+
+   .non-citi .line{
+       margin-left: 0;
+       width: 66%;
+   }
+}
+
+@media(max-width: 769px){
+   .sa-citizen .line{
+      display: none;
+   }
+   .non-citi .line{
+       display: none;
+   }
+   .non-citizen .line{
+       display: none;
+   }
+   
+   .sa-citizen h3{
+       font-size: 25px;
+   }
+   .non-citizen h3{
+       font-size: 25px;
+   }
+   .non-citi h3{
+       font-size: 25px;
+   }
+   
+   .grade_8 h2{
+       font-size: 30px;
+   }
+   .other_grades h2{
+       font-size: 30px;
+   }
+}
+
+@media(max-width: 718px){
+   .about h2{
+       font-size: 23px;
+   }
+   .hero h1{
+       font-size: 45px;
+   }
+   
+}
+
+@media(max-width: 638px){
+   .hero h1{
+       font-size: 35px;
+   }
+   
+   .back-bar p{
+        font-size: 19px;
+    }
+   
+  
+   
+   .hero{
+       height: 200px;
+   }
+   
+   .about h2{
+       font-size: 23px;
+   }
+   .about .line{
+       margin-left: 20%;
+       width: 50%;
+   }
+   .info p{
+       font-size: 19px;
+       margin: 12px 0px;
+   }
+   .grade_8 .line{
+       margin-left: 17%;
+       width: 67%;
+       height: 2px;
+   }
+   
+   .sa-citizen h3{
+       font-size: 21.5px;
+      margin-left: 0px;
+   }
+   .sa-citizen li{
+       font-size: 19px;
+   }
+   .sa-citizen {
+       margin: 20px 0px;
+   }
+   .sa-citizen ol{
+       margin-left: 20px;
+   }
+   
+    .non-citizen h3{
+       font-size: 21.5px;
+      margin-left: 0px;
+   }
+   .non-citizen li{
+       font-size: 19px;
+   }
+   .non-citizen {
+       margin: 20px 0px;
+   }
+   .non-citizen ol{
+       margin-left: 20px;
+   }
+   
+    .non-citi h3{
+       font-size: 21.5px;
+      margin-left: 0px;
+   }
+   .non-citi li{
+       font-size: 19px;
+   }
+   .non-citi {
+       margin: 20px 0px;
+   }
+   .non-citi ol{
+       margin-left: 20px;
+   }
+   
+   .extra p{
+       font-size: 19px;
+   }
+   
+   .extra_info p{
+       font-size: 19px;
+   }
+   
+   .other_grades .line{
+       margin-left: 17%;
+       width: 67%;
+       height: 2px;
+   }
+   .other_grades h2{
+       font-size: 25px;
+   }
+   
+   
+}
+
+@media(max-width: 436px){
+   .sa-citizen{
+       text-align: center;
+   }
+   
+   .back-bar p{
+        font-size: 16px;
+    }
+   
+  
+   
+   .non-citizen{
+       text-align: center;
+   }
+   
+   .non-citi{
+       text-align: center;
+   }
+   
+   .grade_8 h2{
+       font-size: 23px;
+   }
+   .grade_8 p{
+       font-size: 17px;
+   }
+   
+   .other_grades p{
+       font-size: 17px;
+   }
+   .other_grades h2{
+       font-size: 20px;
+   }
+   
+   .hero h1{
+       font-size: 29px;
+   }
+   
+   
+   .hero{
+       height: 150px;
+   }
+   
+   .logo{
+       font-size: 15px;
+   }
+   
+   
+   
+
+}
+
+@media(max-width: 412px){
+   .info p{
+       font-size: 15px;
+   }
+   
+   .sa-citizen li{
+       font-size: 15px;
+   }
+   .non-citizen li{
+       font-size: 15px;
+   }
+   
+   
+    .non-citi li{
+       font-size: 15px;
+   }
+   
+   .extra p{
+       font-size: 15px;
+   }
+   .extra_info p{
+       font-size: 17px;
+   }
+   
+   .sa-citizen h3{
+       font-size: 19px;
+   }
+    .non-citizen h3{
+       font-size: 19px;
+   }
+   
+   
+    .non-citi h3{
+       font-size: 18px;
+   }
+}

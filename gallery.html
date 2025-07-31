@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="img/logo.png" >
+  <meta name="author" content="Thobani Hlatshwayo">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/scroll.css">
+  <link rel="stylesheet" href="menu/app.css">
+  <link rel="stylesheet" href="css/footer.css">
+ <link rel="stylesheet" href="css/nav.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+  <title>President High | Gallery</title>
+  <style>
+    :root { --blue-clr: #1523ff; --red: #ff2a15; --bg-clr: #212121; --txt-clr: #ffffff; --txt-clr-: #ffffff; }
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    body { background: var(--txt-clr); color: var(--bg-clr); }
+    .logo { font-weight: bold; display: flex; align-items: center; }
+    .logo img { width: 30px; height: 30px; margin-right: 8px; }
+    .hero { height: 350px; background: url('css/img/gallery.jpg') center/cover no-repeat; display: flex; justify-content: center; align-items: center; color: var(--txt-clr-); font-size: 2.5rem; text-transform: uppercase;  background-attachment: fixed;}
+    .gallery { padding: 40px 10px; }
+    .gallery h2 { text-align: center; font-size: 2rem; margin-bottom: 10px; }
+    .gallery .line, .red-line { width: 100px; height: 3px; margin: 0 auto 30px; background: var(--blue-clr); }
+    .red-line { background: var(--red); }
+    .gall { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; }
+    .gall a { width: 250px; height: 170px; overflow: hidden; border-radius: 6px; position: relative; }
+    .gall img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+    .gall a:hover img { transform: scale(1.1); }
+    .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.8); justify-content: center; align-items: center; z-index: 999; }
+    .lightbox img { max-width: 90%; max-height: 80%; }
+    .lightbox svg { position: absolute; top: 20px; right: 20px; width: 30px; height: 30px; fill: white; cursor: pointer; }
+    .F-line{ width: 100%;  height: 2.5px;  background: var(--gld-clr); }
+    @media(max-width: 438px){
+    .back-bar p{
+        font-size: 16px;
+    }
+   }
+  
+  </style>
+</head>
+<body data-mode="light">
+  <div id="progress">
+   <span id="progress-value"><i class="fa-solid fa-arrow-up"></i></span>
+ </div>
+
+ <section class="nav-info">
+   <ul>
+     <li><i class="fa-solid fa-location-dot"></i> 102 Rifle Range Road, Swartgoud, Ridgeway, 2091</li>
+   </ul>
+   <ul>
+     <li>Mondays - Thursdays: 07:40 – 14:15</li>
+     <li>Fridays: 07:40 – 12:30</li>
+   </ul>
+
+   <ul class="links">
+     <li><i class="fa-solid fa-envelope"></i>
+         <a href="mailto:admin@hspresident.co.za">admin@hspresident.co.za</a></li>
+     <li><i class="fa-solid fa-phone"></i>      
+         <a href="tel:+27 11 680 2531">+27 11 680 2531</a></li>  
+   </ul>
+
+   <div class="social">
+     <a href="https://www.facebook.com/presidenthigh/"><i class="fab fa-facebook-f"></i></a>
+           
+           <a href="https://www.instagram.com/officialpressieshs?igsh=MTZoMmpkZzA5MWNqdQ==
+           "><i class="fab fa-instagram"></i></a>
+           </div>
+ </section>
+ 
+ <div class="nav-line"></div>  
+   <nav>
+     
+       <a href="index.html" class="logo">
+          <img src="img/logo.png" alt="School Logo"> 
+          President <span>High School</span>
+       </a>
+
+       <div class="off-screen-menu">
+         <ul class="nav">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="about.html">About</a></li>
+           <li><a href="admin.html">Admissions</a></li>
+           <li><a href="gallery.html">Gallery</a></li>
+           <li><a href="social.html">Social</a></li>
+           <li><a href="contact.html">Contact</a></li>
+             
+                    
+                      <img src="img/moon.png" alt="image of a moon icon" class="mode-switch" id="dark_light">
+                    
+          </ul>
+        </div>
+    
+        
+          <div class="ham-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+      
+        </div>
+
+       <ul class="navbar">
+         <li><a href="index.html">Home</a></li>
+         <li><a href="about.html">About</a></li>
+         <li><a href="admin.html">Admissions</a></li>
+         <li><a href="gallery.html">Gallery</a></li>
+         <li><a href="social.html">Social</a></li>
+         <li><a href="contact.html">Contact</a></li>
+           
+             <img src="img/moon.png" alt="image of a moon icon" class="dark-light" id="dark-light">
+           
+       </ul>
+       
+       
+   </nav>
+   <div class="nav-line"></div>
+
+<section class="hero">Gallery</section>
+
+<section class="gallery">
+  <h2>Academics</h2>
+  <div class="line"></div>
+  <div class="gall">
+    <a href="gallery/aca-1.jpg"><img src="gallery/aca-1.jpg" alt="Academics 1" loading="lazy"></a>
+    <a href="gallery/aca-2.jpg"><img src="gallery/aca-2.jpg" alt="Academics 2" loading="lazy"></a>
+    <a href="gallery/aca-3.jpg"><img src="gallery/aca-3.jpg" alt="Academics 3" loading="lazy"></a>
+    <a href="gallery/aca-4.jpg"><img src="gallery/aca-4.jpg" alt="Academics 4" loading="lazy"></a>
+    <a href="gallery/aca-5.jpg"><img src="gallery/aca-5.jpg" alt="Academics 5" loading="lazy"></a>
+    <a href="gallery/aca-6.jpg"><img src="gallery/aca-6.jpg" alt="Academics 6" loading="lazy"></a>
+    <a href="gallery/aca-7.jpg"><img src="gallery/aca-7.jpg" alt="Academics 7" loading="lazy"></a>
+    <a href="gallery/aca-8.jpg"><img src="gallery/aca-8.jpg" alt="Academics 8" loading="lazy"></a>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Sports</h2>
+  <div class="red-line"></div>
+  <div class="gall">
+    <a href="gallery/sport-1.jpg"><img src="gallery/sport-1.jpg" alt="Sports 1" loading="lazy"></a>
+    <a href="gallery/sport-2.jpg"><img src="gallery/sport-2.jpg" alt="Sports 2" loading="lazy"></a>
+    <a href="gallery/sport-3.jpg"><img src="gallery/sport-3.jpg" alt="Sports 3" loading="lazy"></a>
+    <a href="gallery/sport-4.jpg"><img src="gallery/sport-4.jpg" alt="Sports 4" loading="lazy"></a>
+    <a href="gallery/sport-5.jpg"><img src="gallery/sport-5.jpg" alt="Sports 5" loading="lazy"></a>
+    <a href="gallery/sport-6.jpg"><img src="gallery/sport-6.jpg" alt="Sports 6" loading="lazy"></a>
+    <a href="gallery/sport-7.jpg"><img src="gallery/sport-7.jpg" alt="Sports 7" loading="lazy"></a>
+    <a href="gallery/sport-8.jpg"><img src="gallery/sport-8.jpg" alt="Sports 8" loading="lazy"></a>
+  </div>
+</section>
+
+<section class="gallery">
+  <h2>Culture</h2>
+  <div class="line"></div>
+  <div class="gall">
+    <a href="gallery/cul-1.jpg"><img src="gallery/cul-1.jpg" alt="Culture 1" loading="lazy"></a>
+    <a href="gallery/cul-14.jpg"><img src="gallery/cul-14.jpg" alt="Culture 2" loading="lazy"></a>
+    <a href="gallery/cul-3.jpg"><img src="gallery/cul-3.jpg" alt="Culture 3" loading="lazy"></a>
+    <a href="gallery/cul-4.jpg"><img src="gallery/cul-4.jpg" alt="Culture 4" loading="lazy"></a>
+    <a href="gallery/cul-12.jpg"><img src="gallery/cul-12.jpg" alt="Culture 5" loading="lazy"></a>
+    <a href="gallery/cul-6.jpg"><img src="gallery/cul-6.jpg" alt="Culture 6" loading="lazy"></a>
+    <a href="gallery/cul-13.jpg"><img src="gallery/cul-13.jpg" alt="Culture 7" loading="lazy"></a>
+    <a href="gallery/cul-8.jpg"><img src="gallery/cul-8.jpg" alt="Culture 8" loading="lazy"></a>
+  </div>
+</section>
+
+<div class="lightbox" id="lightbox">
+  <svg id="close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18.3 5.71a1 1 0 00-1.41 0L12 10.59 7.11 5.7a1 1 0 00-1.41 1.42l4.89 4.89-4.89 4.89a1 1 0 001.41 1.42L12 13.41l4.89 4.89a1 1 0 001.41-1.42l-4.89-4.89 4.89-4.89a1 1 0 000-1.41z"></path></svg>
+  <img src="" alt="Expanded image">
+</div>
+<div class="F-line"></div>
+<footer class="footer">
+ 
+  <div class="container">
+    <div class="row">
+      <div class="footer-col">
+        <h4>School Address & Times</h4>
+        <ul>
+          <li>102 Rifle Range Road, Swartgoud</li>
+          <li>Ridgeway</li>
+          <li>2091</li>
+          <li>Mondays to Thursdays: 07:40 – 14:15</li>
+          <li>Fridays: 07:40 – 12:30</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li>
+            <a href="fees.html"><i class="fa-solid fa-money-bills"></i> School Fees</a></li>
+          <li>
+            <a href="shop.html"><i class="fa-solid fa-book"></i> Book & Uniform Shop</a></li>
+            <li></i>
+              <a href="house.html"><i class="fa-solid fa-house"></i> Pressie Houses</a></li>
+              <li></i>
+                <a href="grdheads.html"><i class="fa-solid fa-chalkboard"></i> Grade Heads</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Links Of Interest</h4>
+        <ul>
+          <li>
+            <a href="conduct.html"> <i class="fa-solid fa-circle-check"></i> Code of Conduct</a></li>
+          <li></i>
+            <a href="academic.html"> <i class="fa-solid fa-graduation-cap"> </i>Academics</a>
+          </li>
+          <li>
+            <a href="subjects.html"> <i class="fa-solid fa-book-open-reader"></i> Subjects Offered</a>
+          </li>
+          <li>
+            <a href="acts.html"> <i class="fa-solid fa-football"></i> Sports & Activities</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>follow us</h4>
+        <div class="social-links">
+          <a href="https://www.facebook.com/presidenthigh/"><i class="fab fa-facebook-f"></i></a>
+          
+          <a href="https://www.instagram.com/officialpressieshs?igsh=MTZoMmpkZzA5MWNqdQ==
+          "><i class="fab fa-instagram"></i></a>
+          <a href="https://d6.co.za/education/"><i class="fa-solid fa-share-from-square"></i></a> 
+          
+           <a href="https://whatsapp.com/channel/0029Vb2rH1xDeON1PGUyO03Q"><i class="fa-brands fa-whatsapp"></i></a> 
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+
+ 
+  <div class="back-bar">
+    <p>&copy; 2025 President High School. <br>Created by <a href="https://www.instagram.com/tm_agenciez/#">T.M Agenciez</a></p>
+</footer>
+
+<script>
+  const lightbox = document.getElementById('lightbox');
+  const img = lightbox.querySelector('img');
+  document.querySelectorAll('.gall a').forEach(link => {
+    link.onclick = e => {
+      e.preventDefault();
+      img.src = link.href;
+      lightbox.style.display = 'flex';
+    };
+  });
+  document.getElementById('close').onclick = () => lightbox.style.display = 'none';
+  lightbox.onclick = e => { if (e.target !== img) lightbox.style.display = 'none'; };
+</script>
+
+<script src="js/main.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

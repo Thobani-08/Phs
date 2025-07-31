@@ -1,0 +1,28 @@
+
+:root{--blue-clr:#1523ff;--naive-clr:#1d3673;--red-clr:#ff2a15;--gld-clr:#eac13b;--txt-clr:#fff;--txt-clr-:#fff;--bg-clr:#212121;--bg-clr-:#212121}*{margin:0;padding:0;box-sizing:border-box;font-family:"Lato",sans-serif}body{background:var(--txt-clr);color:var(--bg-clr);transition:1s}nav{display:flex;justify-content:space-between;align-items:center;margin:10px 20px}.nav-line{width:100%;height:1.5px;background:var(--gld-clr)}.nav-info{display:flex;justify-content:space-between;padding:0 40px;background:var(--naive-clr);color:var(--txt-clr-)}.nav-info ul,.nav-info .social{display:flex;flex-direction:column;justify-content:center;padding:9px 2px;list-style:none;position:relative}.nav-info ul::before,.nav-info .social::before{content:'';position:absolute;width:1px;height:100%;background:var(--txt-clr-);left:-22px}.nav-info .social::after{content:'';position:absolute;width:1px;height:100%;background:var(--txt-clr-);right:-12px}.nav-info ul li i,.nav-info ul i{font-size:12px;padding-right:4px}.nav-info .social{flex-direction:row;align-items:center;padding-top:11px}.nav-info .social a{height:33px;width:33px;margin:0 10px 10px 0;line-height:33px;border-radius:5px;color:#fff;text-align:center;background:var(--gld-clr);transition:.5s ease}.nav-info .social a:hover{border-radius:50%}.nav-info .social i{font-size:17px}.nav-info ul a{text-decoration:none;color:var(--txt-clr-);padding-left:3px}.logo{display:flex;justify-content:center;align-items:center;font-weight:700}.logo img{height:30px;width:30px;margin-right:10px}.logo span{color:var(--blue-clr);padding-left:5px}nav a{text-decoration:none;color:var(--bg-clr)}.off-screen-menu{display:none}.dark-light{height:40px;width:40px;margin-left:15px;cursor:pointer}.navbar{display:flex;justify-content:center;align-items:center}.navbar li{list-style:none}.navbar a{display:flex;margin:0 10px;flex-direction:row;justify-content:center;align-items:center;font-size:16px;font-weight:600;position:relative;padding:5px;transition:.4s}.navbar a:hover{color:var(--txt-clr)}.navbar a::after{content:"";position:absolute;background:var(--blue-clr);box-shadow:0 0 10px var(--blue-clr);height:4px;width:0;left:0;bottom:-1px;transition:.4s;z-index:-1}.navbar a:hover::after{width:100%;padding:13px 0}.hero{width:100%;height:350px;background:url("img/gallery.jpg") center/cover fixed no-repeat;display:flex;justify-content:center;align-items:center;flex-direction:column;color:var(--txt-clr);text-align:center}.hero h1{font-size:80px;font-weight:600;text-transform:uppercase;letter-spacing:2.5px}
+
+@media(max-width: 980px){
+    .nav-info{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 821px){
+  .navbar{
+     display: none;
+ }
+
+ .hide{
+    display: flex;
+}
+
+  .nav-info{
+      display: none;
+  }
+
+  .off-screen-menu{
+    display: block;
+}
+
+}
+

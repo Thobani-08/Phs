@@ -1,0 +1,580 @@
+:root{
+    --blue-clr: #1523ff;
+    --naive-clr: #1d3673;
+    --red-clr: #ff2a15;
+    --gld-clr: #eac13b;
+    --txt-clr: #ffffff;
+    --txt-clr-: #ffffff;
+    --bg-clr-: #212121;
+    --bg-clr: #212121;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+body {
+    background: var(--txt-clr);
+    color: var(--bg-clr);
+    transition: 1s;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.nav-line{
+    width: 100%;
+    height: 1.5px;
+    background: var(--gld-clr);
+}
+
+.nav-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 40px;
+    font-size: 16px;
+    background: var(--naive-clr);
+    color: var(--txt-clr-); 
+}
+.nav-info ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 9px 2px;
+    
+}
+.nav-info ul::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: var(--txt-clr-);
+    left: -22px;
+}
+.nav-info ul li i{
+    font-size: 15px;
+    padding-right: 4px;
+}
+
+
+.nav-info .social{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 9px 2px;
+    padding-top: 11px;
+}
+
+.nav-info .social::before{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: var(--txt-clr-);
+    left: -22px;
+}
+.nav-info .social::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    background: var(--txt-clr-);
+    right: -12px;
+}
+
+.nav-info .social a{
+    height: 33px;
+	width: 33px;
+    text-align: center;
+	background-color: var(--gld-clr);
+	margin:0 10px 10px 0;
+	line-height: 33px;
+	border-radius: 5px;
+	color: #ffffff;
+	transition: all 0.5s ease;
+}
+.nav-info .social a:hover{
+    border-radius: 50%;
+}
+
+.nav-info .social i{
+    font-size: 17px;
+}
+
+.nav-info ul a{
+    text-decoration: none;
+    color: var(--txt-clr-);
+    padding-left: 3px;
+}
+.nav-info ul i{
+    font-size: 12px;
+}
+.logo span{
+    color: var(--blue-clr);
+    padding-left: 5px;
+}
+nav a{
+    text-decoration: none;
+    color: var(--bg-clr);
+}
+
+.logo img{
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.dark-light{
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.off-screen-menu{
+    display: none;
+  }
+
+.navbar li{
+    list-style: none;
+}
+.navbar {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar a{
+    display: flex;
+    margin: 0px 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    padding: 5px 5px;
+    transition: 0.4s;
+}
+
+.navbar a:hover{
+    color: var(--txt-clr-);
+}
+
+.navbar a:after{
+    content: "";
+    position: absolute;
+    background: var(--blue-clr);
+    box-shadow: 0px 0px 10px var(--blue-clr);
+    height: 4px;
+    width: -1;
+    left: 0;
+    bottom: -1px;
+    transition: 0.4s;
+    z-index: -1;
+}
+.navbar a:hover:after{
+    width: 100%;
+    padding: 13px 0px;
+}
+
+
+.hero{
+    width: 100%;
+    height: 380px;
+    background-image: url("img/house.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.hero{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: var(--txt-clr-);
+}
+
+.hero h1{
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+}
+
+.system{
+    text-align: center;
+    margin: 30px 40px;
+}
+
+.system h2{
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    display: inline;
+}
+.system h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--blue-clr);
+    bottom: -3.5px;
+    left: 0px;
+    border-radius: 20px;
+    
+}
+
+.system p{
+    font-size: 22px;
+    font-weight: 450;
+    margin-bottom: 20px;
+  }
+  
+  .system .para{
+      margin-top: 30px;
+  }
+
+.system ul{
+    margin-left: 30px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.system li{
+    margin: 10px 0px;
+}
+
+
+.houses{
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.houses h2{
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    display: inline;
+}
+.houses h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--red-clr);
+    bottom: -3.5px;
+    left: 0px;
+    border-radius: 20px;
+    font-size: 35px;
+}
+
+.houses p{
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 550;
+}
+
+.houses ol{
+    margin-left: 30px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.houses li{
+    margin: 10px 0px;
+}
+
+
+.houses{
+    position: relative;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 34px;
+}
+
+
+.houses .img-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px;
+}
+
+.img-container .img{
+    width: 350px;
+    height: 250px;
+    border: 3.5px solid var(--bg-clr);
+    padding: 7px 7px;
+    border-radius: 0px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+    border-radius: 0px;
+}
+
+
+
+
+.item .name{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.item .slogan{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 7px;
+    margin-bottom: 6px;
+}
+
+.item{
+    margin: 10px 13px;
+}
+
+.gld p{
+    color: var(--gld-clr);
+}
+
+.gld .img::after{
+    border: 3.5px solid var(--gld-clr);
+}
+
+
+
+.red p{
+    color: var(--red-clr);
+}
+.red .img{
+    border: 3.5px solid var(--red-clr);
+}
+
+.blue p{
+    color: var(--blue-clr);
+}
+.blue .img{
+    border: 3.5px solid var(--blue-clr);
+}
+
+.grn p{
+    color: #66ff2b;
+}
+.grn .img{
+    border: 3.5px solid #66ff2b;
+}
+
+.prl p{
+    color: #b92bff;
+}
+.prl .img{
+    border: 3.5px solid #b92bff;
+}
+
+.team{
+    text-align: center;
+    margin: 30px 20px;
+}
+
+.team h2{
+    font-size: 35px;
+    margin-top: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    display: inline;
+}
+.team h2::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: var(--gld-clr);
+    bottom: -3.5px;
+    left: 0px;
+    border-radius: 20px;
+    
+    
+}
+
+.team p{
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: 550;
+}
+
+.team ol{
+    margin-left: 30px;
+    text-align: left;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 45px;
+}
+.team li{
+    margin: 10px 0px;
+}
+
+
+
+.F-line{
+    width: 100%;
+    height: 2.5px;
+    background: var(--gld-clr);
+}
+
+@media(max-width: 1025px){
+    .nav-info{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 980px){
+    .nav-info{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 821px){
+    .navbar{
+       display: none;
+   }
+
+   .nav-info{
+    display: none;
+   }
+
+    
+   .hero h1{
+    font-size: 55px;
+}
+.banner-img{
+  height: 250px;
+}
+
+    .system h2{
+        font-size: 30px;
+    }
+
+    .system p{
+        font-size: 19px;
+    }
+
+    .system ul{
+        font-size: 19px;
+    }
+
+    .houses h2{
+        font-size: 30px;
+    }
+
+    .houses p{
+        font-size: 19px;
+    }
+
+    .houses ol{
+        font-size: 19px;
+    }
+
+    .team h2{
+        font-size: 30px;
+    }
+
+    .team p{
+        font-size: 19px;
+    }
+
+    .team ol{
+        font-size: 19px;
+    }
+}
+
+   @media(max-width: 638px){
+       .back-bar p{
+        font-size: 19px;
+    }
+   
+   }
+
+
+@media(max-width: 438px){
+    .hero h1{
+        font-size: 35px;
+    }
+    .hero{
+        height: 150px;
+    }
+    
+    .system h2{
+        font-size: 22px;
+    }
+
+    .system p{
+        font-size: 16px;
+    }
+
+    .system ul{
+        font-size: 16px;
+    }
+
+    .houses h2{
+        font-size: 22px;
+    }
+
+    .houses p{
+        font-size: 16px;
+    }
+
+    .houses ol{
+        font-size: 16px;
+    }
+
+    .team h2{
+        font-size: 22px;
+    }
+
+    .team p{
+        font-size: 16px;
+    }
+
+    .team ol{
+        font-size: 16px;
+    }
+    
+    .back-bar p{
+        font-size: 16px;
+    }
+   
+  
+}
